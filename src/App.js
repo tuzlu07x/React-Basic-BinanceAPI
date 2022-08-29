@@ -44,8 +44,8 @@ function App() {
               {bitcoins.map(bitcoin => (
                 <tbody>
                   <tr>
-                    <th>{bitcoin.symbol.replace('BTC', '')}</th>
-                    <th>{bitcoin.price}</th>
+                    <th key={bitcoin.symbol}>{bitcoin.symbol.replace('BTC', '')}</th>
+                    <th key={bitcoin.price}>{bitcoin.price}</th>
                   </tr>
                 </tbody>
               ))}
